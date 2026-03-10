@@ -70,3 +70,32 @@ window.addEventListener('scroll', () => {
   secs.forEach(s => { if (window.scrollY >= s.offsetTop - 130) c = s.id; });
   navAs.forEach(a => { a.style.color = a.getAttribute('href') === '#' + c ? 'var(--cyan)' : ''; });
 });
+
+const heroImages = [
+  './imagens/LOGO.jpg',
+  './imagens/Gustavo Chimello 1.jpeg',
+  './imagens/Gustavo Chimello 2.jpeg'
+];
+let heroIndex = 0;
+
+function cycleHeroImage() {
+  const img = document.getElementById('heroImg');
+  img.style.transition = 'opacity 0.3s ease';
+  img.style.opacity = '0';
+  setTimeout(() => {
+    heroIndex = (heroIndex + 1) % heroImages.length;
+    img.src = heroImages[heroIndex];
+    img.style.opacity = '1';
+  }, 300);
+}
+
+document.getElementById('heroLogo').addEventListener('mouseenter', () => {
+  ring.style.width  = '46px';
+  ring.style.height = '46px';
+  ring.style.opacity = '.8';
+});
+document.getElementById('heroLogo').addEventListener('mouseleave', () => {
+  ring.style.width  = '30px';
+  ring.style.height = '30px';
+  ring.style.opacity = '.45';
+});

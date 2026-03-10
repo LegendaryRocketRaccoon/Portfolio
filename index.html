@@ -10,10 +10,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
 <div class="cursor" id="cursor"></div>
 <div class="cursor-ring" id="cursorRing"></div>
-
 <nav>
   <a href="#hero" class="nav-logo">
     <div class="nav-logo-img-wrap">
@@ -30,12 +28,11 @@
     <li><a href="#contact">Contato</a></li>
   </ul>
 </nav>
-
 <section id="hero">
   <div class="hero-logo-wrap">
     <div class="hero-logo-ring"></div>
-    <div class="hero-logo-inner">
-      <img src="./imagens/LOGO.jpg" alt="Gustavo Chimello">
+    <div class="hero-logo-inner" id="heroLogo" onclick="cycleHeroImage()" style="cursor:none;">
+      <img id="heroImg" src="./imagens/LOGO.jpg" alt="Gustavo Chimello">
     </div>
   </div>
   <p class="hero-tag">// Caxias do Sul, RS — Desenvolvedor</p>
@@ -56,7 +53,6 @@
     <a href="#resume" class="btn btn-outline">Baixar Currículo</a>
   </div>
 </section>
-
 <section id="about">
   <div class="section-wrap">
     <div class="section-label reveal">01 — Sobre</div>
@@ -75,7 +71,6 @@
     </div>
   </div>
 </section>
-
 <section id="skills">
   <div class="section-wrap">
     <div class="section-label reveal">02 — Tecnologias</div>
@@ -108,13 +103,11 @@
     </div>
   </div>
 </section>
-
 <section id="projects">
   <div class="section-wrap">
     <div class="section-label reveal">03 — Trabalhos</div>
     <h2 class="reveal">Projetos</h2>
     <div class="projects-grid">
-
       <div class="project-card featured reveal">
         <div class="project-video">
           <div class="video-placeholder">
@@ -133,7 +126,6 @@
           </div>
         </div>
       </div>
-
       <!-- IoT Monitor -->
       <div class="project-card reveal">
         <div class="project-video"><div class="video-placeholder"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><span>Adicionar vídeo</span></div></div>
@@ -148,7 +140,6 @@
           </div>
         </div>
       </div>
-
       <!-- IoT Monitor 
       <div class="project-card reveal">
         <div class="project-video"><div class="video-placeholder"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><span>Adicionar vídeo</span></div></div>
@@ -178,7 +169,6 @@
           </div>
         </div>
       </div>
-
       <!-- Firebase Remote -->
       <div class="project-card reveal">
         <div class="project-video"><div class="video-placeholder"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><span>Adicionar vídeo</span></div></div>
@@ -193,7 +183,6 @@
           </div>
         </div>
       </div>
-
       <!-- Lab Scheduling -->
       <div class="project-card reveal">
         <div class="project-video"><div class="video-placeholder"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><span>Adicionar vídeo</span></div></div>
@@ -208,7 +197,6 @@
           </div>
         </div>
       </div>
-
       <!-- Deimos -->
       <div class="project-card reveal">
         <div class="project-video"><div class="video-placeholder"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><span>Adicionar vídeo</span></div></div>
@@ -223,7 +211,6 @@
           </div>
         </div>
       </div>
-
       <!-- IoT Dashboard 
       <div class="project-card reveal">
         <div class="project-video"><div class="video-placeholder"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor"/></svg><span>Adicionar vídeo</span></div></div>
@@ -255,11 +242,9 @@
           <div class="project-links"><span class="proj-link proj-link-git" style="opacity:.4;cursor:default;">Em breve</span></div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
-
 <section id="resume">
   <div class="section-wrap">
     <div class="section-label reveal">04 — Currículo</div>
@@ -284,21 +269,19 @@
         </div>
       </div>
       <div class="resume-actions">
-  <a href="/documentos/Gustavo_Chimello_Curriculo.pdf" download="Gustavo_Chimello_Curriculo.pdf" class="btn-download">
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-    Download Currículo
-  </a>
-</div>
+        <a href="/documentos/Gustavo_Chimello_Curriculo.pdf" download="Gustavo_Chimello_Curriculo.pdf" class="btn-download">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Currículo
+        </a>
+      </div>
     </div>
   </div>
 </section>
-
 <section id="certs">
   <div class="section-wrap">
     <div class="section-label reveal">05 — Conquistas</div>
     <h2 class="reveal">Certificados &amp; Prêmios</h2>
     <div class="certs-list">
-
       <div class="cert-item reveal">
         <div class="cert-year">2017</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1773127023195/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -306,7 +289,6 @@
         </a>
         <div class="cert-org">Concedido por Câmara Municipal de Caxias do Sul</div>
       </div>
-
       <div class="cert-item reveal">
         <div class="cert-year">2022</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1723840577049/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -314,7 +296,6 @@
         </a>
         <div class="cert-org">SENAI</div>
       </div>
-
       <div class="cert-item cert-highlight reveal">
         <div class="cert-year">2023</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1723839583901/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -322,7 +303,6 @@
         </a>
         <div class="cert-org">26ª Olimpíada Brasileira de Astronomia e Astronáutica — OBA</div>
       </div>
-
       <div class="cert-item reveal">
         <div class="cert-year">2024</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1723840086448/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -330,7 +310,6 @@
         </a>
         <div class="cert-org">Alura / Google</div>
       </div>
-
       <div class="cert-item cert-highlight reveal">
         <div class="cert-year">2024</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1773125254527/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -338,7 +317,6 @@
         </a>
         <div class="cert-org">NASA International Space Apps Challenge</div>
       </div>
-
       <div class="cert-item cert-highlight reveal">
         <div class="cert-year">2025</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1773125407745/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -346,7 +324,6 @@
         </a>
         <div class="cert-org">NASA International Space Apps Challenge</div>
       </div>
-
       <div class="cert-item reveal">
         <div class="cert-year">2025</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1773125854744/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -354,7 +331,6 @@
         </a>
         <div class="cert-org">Alura</div>
       </div>
-
       <div class="cert-item reveal">
         <div class="cert-year">2025</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1773125993361/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -362,7 +338,6 @@
         </a>
         <div class="cert-org">Alura</div>
       </div>
-
       <div class="cert-item reveal">
         <div class="cert-year">2025</div>
         <a href="https://www.linkedin.com/in/dev-chimello/details/honors/1773127758023/single-media-viewer/?profileId=ACoAAE1LosABwVivJU7zCzyrJ4JmASdIRXAblc8" target="_blank" rel="noopener noreferrer">
@@ -370,16 +345,13 @@
         </a>
         <div class="cert-org">Alura</div>
       </div>
-
       <div class="cert-item reveal">
         <div class="cert-name">Inglês Avançado</div>
         <div class="cert-org">Autodidata</div>
       </div>
-
     </div>
   </div>
 </section>
-
 <section id="contact">
   <div class="section-wrap">
     <div class="section-label reveal" style="justify-content:center;">06 — Contato</div>
@@ -401,11 +373,9 @@
     </div>
   </div>
 </section>
-
 <footer>
   <span style="color:var(--cyan)">//</span> Gustavo Chimello &nbsp;·&nbsp; Desenvolvido com HTML, CSS &amp; JS &nbsp;·&nbsp; Caxias do Sul, RS &nbsp;·&nbsp; <span style="color:var(--cyan)">2026</span>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>
