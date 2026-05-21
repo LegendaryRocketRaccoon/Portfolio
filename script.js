@@ -74,7 +74,8 @@ window.addEventListener('scroll', () => {
 const heroImages = [
   './imagens/LOGO.jpg',
   './imagens/Gustavo Chimello 1.jpeg',
-  './imagens/Gustavo Chimello 2.jpeg'
+  './imagens/Gustavo Chimello 2.jpeg',
+  './imagens/Gustavo Chimello 3.jpeg'
 ];
 let heroIndex = 0;
 
